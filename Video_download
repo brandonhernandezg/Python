@@ -1,0 +1,11 @@
+--Download_video
+import pafy
+video = pafy.new('url')
+descargar = video.getbest(preftype='mp4')
+descargar.download()
+
+--Download_audio
+import pafy
+video = pafy.new('url')
+descargar = video.getbestaudio()
+descargar.download()
